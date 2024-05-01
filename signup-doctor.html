@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Doctor Page - Patient Appoinment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="page-body">
+        <!-- Header section Start -->
+        <header class="b-flex nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="healthflow.com" width="100%"></a>
+            </div>
+            <nav id="navBar" class="nav-links b-flex">
+                
+                <ul class="nav-ul">
+                    <div id="crossIcon" class="cross-icon-area">
+                        <i class="fa-sharp fa-solid fa-xmark cross-icon" onclick="hideContainer('navBar')"></i>
+                    </div>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li style="white-space: pre;"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                    <li style="white-space: pre;"><a href="labs-search.html" class="nav-link">Lab Test</a></li>
+                    <li><a href="help.html" class="nav-link">Help</a></li>
+                    <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                </ul>
+                <div class="login-signup b-flex">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <div class="img-content">
+                                <a href="#">Sign Up</a>
+                            </div>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content">
+                                <a href="signup-patient.html">As Patient</a>
+                                <a href="signup-doctor.html">As Doctor</a>
+                                <a href="signup-lab.html">As Lab</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="login.html"><button class="btn">Log In</button></a>
+                </div>
+            </nav>
+            <div id="menuBar" class="menu-icon">
+                <img onclick="showContainer('navBar')" src="images/menu-bar.svg" alt="">
+            </div>
+        </header>
+        <!-- Header section End -->
+        <section>
+            <div class="contactus-fields w-80 dm-sans text">
+                <form action="" method="post">
+                    <!-- ------------ -->
+                    <p class="doc-register-field">Personal Information:</p>
+                    <div class="contactus-input-flex">
+                        <div class="input-group">
+                            <label for="fname">Full Name</label>
+                            <input type="text" name="fname" placeholder="Enter Full name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="lname">Date of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="contactus-input-flex">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="number">Phone number</label>
+                            <input type="number" name="number" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" placeholder="Enter your Address">
+                        </div>
+                    </div>
+                    <!-- ------------ -->
+                    <p class="doc-register-field">Professional Information:</p>
+                    <div class="input-group">
+                        <label for="license">Medical License Number</label>
+                        <input type="text" name="license" placeholder="Enter your Medical License" required>
+                    </div>
+                    <div class="contactus-input-flex">
+                        <div class="input-group">
+                            <label for="specialization">Select Medical Specialization:</label>
+                            <select name="specialization" id="specialization" required>
+                                <option value="Select one...">Select one...</option>
+                                <option value="Dermatologist">Dermatologist</option>
+                                <option value="Cardiologist">Cardiologist</option>
+                                <option value="Pediatrician">Pediatrician</option>
+                                <option value="Gynecologist">Gynecologist</option>
+                                <option value="Neurologist">Neurologist</option>
+                                <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                                <option value="Psychiatrist">Psychiatrist</option>
+                                <option value="Oncologist">Oncologist</option>
+                                <option value="Ophthalmologist">Ophthalmologist</option>
+                                <option value="Urologist">Urologist</option>
+                                <option value="Endocrinologist">Endocrinologist</option>
+                                <option value="Pulmonologist">Pulmonologist</option>
+                                <option value="Gastroenterologist">Gastroenterologist</option>
+                                <option value="Rheumatologist">Rheumatologist</option>
+                                <option value="Nephrologist">Nephrologist</option>
+                                <option value="Infectious Disease Specialist">Infectious Disease Specialist</option>
+                                <option value="Allergist/Immunologist">Allergist/Immunologist</option>
+                                <option value="Anesthesiologist">Anesthesiologist</option>
+                                <option value="Radiologist">Radiologist</option>
+                                <option value="Pathologist">Pathologist</option>
+                                <option value="Hematologist">Hematologist</option>
+                                <option value="Family Medicine Physician">Family Medicine Physician</option>
+                                <option value="General Surgeon">General Surgeon</option>
+                                <option value="Plastic Surgeon">Plastic Surgeon</option>
+                                <option value="ENT Specialist">ENT (Ear, Nose, and Throat) Specialist</option>
+                                <option value="Geriatrician">Geriatrician</option>
+                                <option value="Neonatologist">Neonatologist</option>
+                                <option value="Palliative Care Specialist">Palliative Care Specialist</option>
+                                <option value="Physical Medicine and Rehabilitation Specialist">Physical Medicine and Rehabilitation Specialist</option>
+                                <option value="Pain Management Specialist">Pain Management Specialist</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="Education">Education</label>
+                            <input type="text" name="Education" placeholder="Enter your Education" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="Experience">Work Experience (previous hospitals, clinics)</label>
+                            <input type="text" name="Experience" placeholder="Enter your Experience" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="Memberships">Professional Memberships (optional)</label>
+                            <input type="text" name="Memberships" placeholder="Enter your Memberships" required>
+                        </div>
+                    </div>
+                    <!-- ------------ -->
+                    <p class="doc-register-field">Identification and Credentials:</p>
+                    <div class="contactus-input-flex">
+                        <div class="input-group">
+                            <label for="photo">Passport-sized photograph</label>
+                            <input type="file" name="photo">
+                        </div>
+                        <div class="input-group">
+                            <label for="proof-of-liscence">Proof of medical license and certifications</label>
+                            <input type="file" name="proof-of-liscence" required>
+                        </div>
+                    </div>
+                    <!-- --------------- -->
+                    <p class="doc-register-field">Practice Information:</p>
+                    <div class="contactus-input-flex">
+                        <div class="input-group">
+                            <label for="Clinic/Hospital">Clinic/Hospital Name (if applicable)</label>
+                            <input type="text" name="Clinic/Hospital" placeholder="Enter your Clinic/Hospital Name">
+                        </div>
+                        <div class="input-group">
+                            <label for="Clinic-address">Clinic/Hospital Address</label>
+                            <input type="text" name="Clinic-address" placeholder="Enter your Clinic/Hospital Address" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="Clinic-contact">Contact Information for the Clinic/Hospital</label>
+                            <input type="text" name="Clinic-contact" placeholder="Enter Clinic/Hospital Contact">
+                        </div>
+                    </div>
+                    <!-- --------------- -->
+                    <p class="doc-register-field">User Account Information:</p>
+                    <div class="contactus-input-flex">
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="Password">Password</label>
+                            <input type="password" name="Password" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+                    <div class="checkbox-group flex">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">I accept the terms</label>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <!-- After submission of form. Redirect the page to redirect.html for verification of Doctor's docs. -->
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

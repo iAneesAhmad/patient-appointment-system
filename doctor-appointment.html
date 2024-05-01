@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Page - Patient Appoinment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+</head>
+<body>
+    <div class="page-body">
+        <!-- Header section Start -->
+        <header class="b-flex nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="healthflow.com" width="100%"></a>
+            </div>
+            <nav style="width: 33%;" class="nav-links- b-flex">
+                
+                <ul class="nav-ul lexend-tera flex" style="align-items: center;">
+                    <li style="width: max-content;"><a href="help.html" class="nav-link">Need Help?</a></li>
+                    <div id="icon-login" class="search-icon-login-page">
+                        <img style="cursor: pointer; padding-left: 15px;" src="images/search-icon.svg" alt="search-icon" width="70%">
+                    </div>
+                </ul>
+                
+                <div id="icon-login" class="search-icon-login-page">
+                    <img style="cursor: pointer;" src="images/profile-icon.svg" alt="search-icon" width="100%">
+                </div>
+                
+                <div id="verticalMenubar" class="menu-icon-login-page">
+                    <div onclick="showContainer('verticalNavbar')" class="menubar">
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                    </div>
+                </div>
+                <!-- Vertical Navbar Start -->
+                <div id="verticalNavbar" class="vertival-nav-bar">
+                    <div class="menu b-flex">
+                        <li style="list-style: none;">MENU</li>
+                        <div class="menubar">
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                        </div>
+                    </div>
+                    <ul class="vertical-navbar">
+                        <li><a href="index.html" class="nav-link vertical-active">HOME</a></li>
+                        <li><a href="profile.html" class="nav-link">PROFILE</a></li>
+                        <li><a href="blogs.html" class="nav-link">BLOGS</a></li>
+                        <li><a href="faqs.html" class="nav-link">FAQ'S</a></li>
+                        <li><a href="help.html" class="nav-link">HELP CENTER</a></li>
+                    </ul>
+                    <div class="accounts">
+                        <p>ACCOUNT</p>
+                        <div class="icons-verticalnav">
+                            <p><a href="https://www.facebook.com/iAneesAhmad"><img src="images/Facebook.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.instagram.com/aneesahmad.pk"><img src="images/Instagram.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://twitter.com/AneesAhmad_pk"><img src="images/Twitter.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.youtube.com/@iAneesAhmad"><img src="images/YouTube.svg" alt="" width="180" height="180"></a></p>
+                        </div>
+                    </div>
+                    <div class="cross-icon- cross-vertical-nav">
+                        <img onclick="hideContainer('verticalNavbar')" src="images/cross.svg" alt="">
+                    </div>
+                </div>
+                <!-- Vertical Navbar End -->
+                
+            </nav>
+        </header>
+        <hr color="#D6D5D5">
+        <!-- Header section End -->
+        <!-- Doctor Details Section Start -->
+        <section class="doc-detail">
+            <div class="flex">
+                <div class="doc-img-area">
+                    <div class="doc-img">
+                        <img src="images/doc-img.svg" alt="doctor image" width="100%">
+                    </div>
+                </div>
+                <div class="doc-details">
+                    <p class="bold doc-name">Dr. Noor Ul Ain</p>
+                    <p class="doc-speciality">Dermatologist, Aesthetic Physician, Cosmetologist</p>
+                    <p class="doc-degree">M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
+                </div>
+            </div>
+            <div class="book-visit flex">
+                <button onclick="showContainer('visitContainer')" class="clinic-visit">Book Clinic Visit</button>
+                <button onclick="showContainer('visitContainer')" class="hospital-visit">Book Hospital Visit</button>
+            </div>
+            <div class="doc-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Education</th>
+                            <th>Location</th>
+                            <th>Registration Number</th>
+                            <th>Language</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MBBS, MD</td>
+                            <td>Abbottabad</td>
+                            <td>xxxxxxx</td>
+                            <td>English, Urdu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="doc-timings">
+                <div class="timing-text">
+                    <p>Timings</p>
+                </div>
+                <div class="available-days">
+                    <div class="timing-flex">
+                        <div class="day-time-slot-row">
+                            <div class="day-time-slots flex">
+                                <p>MON</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="day-time-slots flex">
+                                <p>TUE</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="day-time-slots flex">
+                                <p>WED</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="day-time-slots flex">
+                                <p>THU</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-time-slot-row">
+                            <div class="day-time-slots flex">
+                                <p>FRI</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="day-time-slots flex">
+                                <p>SAT</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="day-time-slots flex">
+                                <p>SUN</p>
+                                <div class="time-slots">
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div> 
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Doctor Details Section End -->
+    </div>
+
+    <div id="visitContainer" class="visit-container">
+        <div  class="cross-icon-visit">
+            <img onclick="hideContainer('visitContainer')" id="crossIconVisit" src="images/cross.svg" alt="cross icon">
+        </div>
+        <div class="clinic-visit-area">
+            <div class="clinic-visit-text heading poppins">
+                <p>Clinic Visit</p>
+            </div>
+            <div style="column-gap: 20px;" class="flex">
+                <div class="calendar-area">
+                    <div class="wrapper">
+                        <header>
+                            <div class="icons" style="justify-content: space-between;">
+                          <span id="prev" class="material-symbols-rounded"><</span>
+                          <p class="current-date"></p>
+                            <span id="next" class="material-symbols-rounded">></span>
+                          </div>
+                        </header>
+                        <div class="calendar">
+                          <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                          </ul>
+                          <ul class="days"></ul>
+                        </div>
+                      </div>
+                </div>
+                <div class="visit-timing-area">
+                    <div class="visit-time">
+                        <div class="sun-icons">
+                            <img src="images/sunrise.svg" alt="sun rise icon">
+                            <img src="images/sunbright.svg" alt="sun rise icon">
+                            <img src="images/sun-noon.svg" alt="sun rise icon">
+                            <img src="images/moon.svg" alt="sun rise icon">
+                        </div>
+                        <div class="radio-buttons">
+                            <form action="">
+                            <input id="timing1" class="radio"  type="radio" name="timing" value="12:00 PM - 1:00 PM">
+                            <label for="timing1">12:00 PM - 1:00 PM</label><br>
+                            <input id="timing2" class="radio"  type="radio" name="timing" value="1:00 PM - 2:00 PM">
+                            <label for="timing2">1:00 PM - 2:00 PM</label><br>
+                            <input id="timing3" class="radio"  type="radio" name="timing" value="2:00 PM - 3:00 PM">
+                            <label for="timing3">2:00 PM - 3:00 PM</label><br>
+                            <input id="timing4" class="radio"  type="radio" name="timing" value="3:00 PM - 400 PM">
+                            <label for="timing4">3:00 PM - 400 PM</label><br>
+                            <input id="timing5" class="radio" type="radio" name="timing" value="4:00 PM - 5:00 PM">
+                            <label for="timing5">4:00 PM - 5:00 PM</label><br>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="note-payment poppins">
+                        <p>Note: Pay at Reception is available Only</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proceed-btn">
+                <a href="patient-info.html"><button class="btn">PROCEED</button></a>
+            </div>
+        </div>
+    </div>
+
+<script src="calendar.js"></script>
+</body>
+</html>

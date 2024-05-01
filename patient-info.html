@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Page - Patient Appoinment System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="page-body">
+        <!-- Header section Start -->
+        <header class="b-flex nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="healthflow.com" width="100%"></a>
+            </div>
+            <nav style="width: 33%;" class="nav-links- b-flex"> 
+                <ul class="nav-ul lexend-tera flex" style="align-items: center;">
+                    <li style="width: max-content;"><a href="help.html" class="nav-link">Need Help?</a></li>
+                </ul>
+                <div id="icon-login" class="search-icon-login-page">
+                    <img style="cursor: pointer; padding-left: 15px;" src="images/search-icon.svg" alt="search-icon" width="70%">
+                </div>
+                <div id="icon-login" class="search-icon-login-page">
+                    <img style="cursor: pointer;" src="images/profile-icon.svg" alt="search-icon" width="100%">
+                </div>
+                <div id="verticalMenubar" class="menu-icon-login-page">
+                    <div onclick="showContainer('verticalNavbar')" class="menubar">
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                    </div>
+                </div>
+                <!-- Vertical Navbar Start -->
+                <div id="verticalNavbar" class="vertival-nav-bar">
+                    <div class="menu b-flex">
+                        <li style="list-style: none;">MENU</li>
+                        <div class="menubar">
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                        </div>
+                    </div>
+                    <ul class="vertical-navbar">
+                        <li><a href="index.html" class="nav-link vertical-active">HOME</a></li>
+                        <li><a href="profile.html" class="nav-link">PROFILE</a></li>
+                        <li><a href="blogs.html" class="nav-link">BLOGS</a></li>
+                        <li><a href="faqs.html" class="nav-link">FAQ'S</a></li>
+                        <li><a href="help.html" class="nav-link">HELP CENTER</a></li>
+                    </ul>
+                    <div class="accounts">
+                        <p>ACCOUNT</p>
+                        <div class="icons-verticalnav">
+                            <p><a href="https://www.facebook.com/iAneesAhmad"><img src="images/Facebook.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.instagram.com/aneesahmad.pk"><img src="images/Instagram.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://twitter.com/AneesAhmad_pk"><img src="images/Twitter.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.youtube.com/@iAneesAhmad"><img src="images/YouTube.svg" alt="" width="180" height="180"></a></p>
+                        </div>
+                    </div>
+                    <div class="cross-icon- cross-vertical-nav">
+                        <img onclick="hideContainer('verticalNavbar')" src="images/cross.svg" alt="">
+                    </div>
+                </div>
+                <!-- Vertical Navbar End -->
+                
+            </nav>
+        </header>
+        <hr color="#D6D5D5">
+        <!-- Header section End -->
+        <!-- Patient Info Section Start -->
+        <section class="patient-info">
+            <div class="patient-info-heading">
+                <p>Patient Information</p>
+            </div>
+            <div class="patient-info-form">
+                <form action="" method="" onsubmit="patientInfoForm()">
+                    <div class="input-group info-page-inputs">
+                        <label for="name">Name *</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="info-page-flex">
+                    <div class="input-group info-page-inputs">
+
+                        <label for="age">Age *</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div class="input-group info-page-inputs">
+
+                        <label for="gender">Gender *</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Custom">Custom</option>
+                        </select>
+                    </div>
+                    <div class="input-group info-page-inputs">
+
+                        <label for="lchecup">Last Checkup *</label>
+                        <input type="date" name="lastcheckup" id="lcheckup">
+                    </div>
+                    </div>
+                    <div class="input-group info-page-inputs">
+
+                        <textarea name="sysmtoms" id="sysmtoms" cols="30" rows="10" placeholder="Write Sysmtoms..."></textarea>
+                    </div>
+                    <div class="submit">
+                        <input onclick="showContainer('appointmentCard')" type="submit" name="submit" value="BOOK APPOINTMENT">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Patient Info Section End -->
+    </div>
+    <section id="appointmentCard" class="apt-schedule-card">
+        <div class="cross-icon-">
+            <img onclick="hideContainer('appointmentCard')" src="images/cross.svg" alt="cross icon">
+        </div>
+        <div class="appointment-schedule poppins">
+            <div class="aptnumber">
+                <p>Apt# crd002</p>
+            </div>
+            <div class="w-60">
+                <div class="apt-logo">
+                    <img src="images/Healthflow transparent 1.svg" alt="HealthFlow.com logo">
+                </div>
+                <div class="patient-name">
+                    <p>Waleed Ahmed</p>
+                </div>
+                <div class="apt-details">
+                    <p>Your Appointment has been Scheduled</p>
+                    <p>Date: <span>23/04/2024</span></p>
+                    <p>Time: <span>12:00 - 1:00</span></p>
+                    <p>Location: <span>Awan Plaza Abbottabad</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------JavaScript file Link------------>
+    <script src="script.js"></script>
+</body>
+</html>

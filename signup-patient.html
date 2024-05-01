@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Patient Appoinment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="page-body">
+        <!-- Header section Start -->
+        <header class="b-flex nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="healthflow.com" width="100%"></a>
+            </div>
+            <nav style="width: 33%;" class="nav-links- b-flex">
+                
+                <ul class="nav-ul lexend-tera flex" style="align-items: center;">
+                    <li style="width: max-content;"><a href="help.html" class="nav-link">Need Help?</a></li>
+                </ul>
+                <div id="icon-login" class="search-icon-login-page">
+                    <img style="cursor: pointer; padding-left: 15px;" src="images/search-icon.svg" alt="search-icon" width="70%">
+                </div>
+                <div id="verticalMenubar" class="menu-icon-login-page">
+                    <div onclick="showContainer('verticalNavbar')" class="menubar">
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                    </div>
+                </div>
+                <!-- Vertical Navbar Start -->
+                <div id="verticalNavbar" class="vertival-nav-bar">
+                    <div class="menu b-flex">
+                        <li style="list-style: none;">MENU</li>
+                        <div class="menubar">
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                        </div>
+                    </div>
+                    <ul class="vertical-navbar">
+                        <li><a href="index.html" class="nav-link vertical-active">HOME</a></li>
+                        <li><a href="blogs.html" class="nav-link">BLOGS</a></li>
+                        <li><a href="faqs.html" class="nav-link">FAQ'S</a></li>
+                        <li><a href="help.html" class="nav-link">HELP CENTER</a></li>
+                    </ul>
+                    <div class="accounts">
+                        <p>ACCOUNT</p>
+                        <div class="icons-verticalnav">
+                            <p><a href="https://www.facebook.com/iAneesAhmad"><img src="images/Facebook.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.instagram.com/aneesahmad.pk"><img src="images/Instagram.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://twitter.com/AneesAhmad_pk"><img src="images/Twitter.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.youtube.com/@iAneesAhmad"><img src="images/YouTube.svg" alt="" width="180" height="180"></a></p>
+                        </div>
+                    </div>
+                    <div class="cross-icon- cross-vertical-nav">
+                        <img onclick="hideContainer('verticalNavbar')" src="images/cross.svg" alt="">
+                    </div>
+                </div>
+                <!-- Vertical Navbar End -->
+                
+            </nav>
+        </header>
+        <hr color="#D6D5D5">
+        <!-- Header section End -->
+        <section class="login-register">
+            <div class="signup-flex">
+                <div class="google-fb-affiliate w-80">
+                    <a href="#">
+                        <div class="google-affiliate flex">
+                            <img src="images/Google logo.svg" alt="google icon">
+                            <p>Sign In With Google</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="fb-affiliate flex">
+                            <img src="images/fb logo.svg" width="5%" alt="fb icon">
+                            <p>Sign In With Facebook</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="or-split">
+                    <p>OR</p>
+                </div>
+                <div class="login-page-fields dm-sans text w-80 capitalize">
+                    <form action="" method="post">
+                        <div class="contactus-input">
+                            <div class="input-group">
+                                <label for="fname">First Name</label>
+                                <input type="text" name="fname" placeholder="Enter your first name">
+                            </div>
+                            <div class="input-group">
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="lname" placeholder="Enter your last name">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">EMAIL ID</label>
+                                <input type="email" name="email" placeholder="Enter your email">
+                            </div>
+                            <div class="input-group">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" placeholder="Enter your password">
+                            </div>
+                            <div class="submit-signup-page">
+                                <input type="submit" value="Register" >
+                                <a href="login.html">Login</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!---------JavaScript file Link------------>
+    <script src="script.js"></script>
+</body>
+</html>

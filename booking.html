@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page - Patient Appoinment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="page-body">
+        <!-- Header section Start -->
+        <header class="b-flex nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="healthflow.com" width="100%"></a>
+            </div>
+            <nav style="width: 33%;" class="nav-links- b-flex">
+                
+                <ul class="nav-ul lexend-tera flex" style="align-items: center;">
+                    <li style="width: max-content;"><a href="help.html" class="nav-link">Need Help?</a></li>
+                    <div id="icon-login" class="search-icon-login-page">
+                        <img style="cursor: pointer; padding-left: 15px;" src="images/search-icon.svg" alt="search-icon" width="70%">
+                    </div>
+                </ul>
+                
+                <div id="icon-login" class="search-icon-login-page">
+                    <img style="cursor: pointer;" src="images/profile-icon.svg" alt="search-icon" width="100%">
+                </div>
+                
+                <div id="verticalMenubar" class="menu-icon-login-page">
+                    <div onclick="showContainer('verticalNavbar')" class="menubar">
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                        <div class="menubar-line"></div>
+                    </div>
+                </div>
+                <!-- Vertical Navbar Start -->
+                <div id="verticalNavbar" class="vertival-nav-bar">
+                    <div class="menu b-flex">
+                        <li style="list-style: none;">MENU</li>
+                        <div class="menubar">
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                            <div style="background-color: #E82A75;" class="menubar-line"></div>
+                        </div>
+                    </div>
+                    <ul class="vertical-navbar">
+                        <li><a href="index.html" class="nav-link vertical-active">HOME</a></li>
+                        <li><a href="profile.html" class="nav-link">PROFILE</a></li>
+                        <li><a href="blogs.html" class="nav-link">BLOGS</a></li>
+                        <li><a href="faqs.html" class="nav-link">FAQ'S</a></li>
+                        <li><a href="help.html" class="nav-link">HELP CENTER</a></li>
+                    </ul>
+                    <div class="accounts">
+                        <p>ACCOUNT</p>
+                        <div class="icons-verticalnav">
+                            <p><a href="https://www.facebook.com/iAneesAhmad"><img src="images/Facebook.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.instagram.com/aneesahmad.pk"><img src="images/Instagram.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://twitter.com/AneesAhmad_pk"><img src="images/Twitter.svg" alt="" width="180" height="180"></a></p>
+                            <p><a href="https://www.youtube.com/@iAneesAhmad"><img src="images/YouTube.svg" alt="" width="180" height="180"></a></p>
+                        </div>
+                    </div>
+                    <div class="cross-icon- cross-vertical-nav">
+                        <img onclick="hideContainer('verticalNavbar')" src="images/cross.svg" alt="">
+                    </div>
+                </div>
+                <!-- Vertical Navbar End -->
+                
+            </nav>
+        </header>
+        <hr color="#D6D5D5">
+        <!-- Header section End -->
+        <section class="search-doctor">
+            <div class="search-doctor-input d-flex">
+                <div class="search-speciality">
+                    <img src="images/search-icon-pink.svg" alt="search-icon">
+                    <input type="text" name="" id="" placeholder="Search  Doctors, Specialities">
+                </div>
+                <div class="select-location">
+                    <img src="images/Location-icon.svg" alt="Location">
+                    <select name="cities" id="">
+                        <option value="Select location">Select location</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Haripur">Haripur</option>
+                        <option value="Abbottabad">Abbottabad</option>
+                    </select>
+                </div>
+            </div>
+            <div class="doctors-cards ">
+                <div class="doctor-card d-flex">
+                    <div class="doc-card b-flex">
+                        <div class="doc-profile-img">
+                            <img src="images/Healthflow transparent 1.svg" alt="profile image">
+                        </div>
+                        <div class="doc-details">
+                                <p class="doc-name">Dr. Noor Ul Ain</p>
+                                <p class="doc-speciality">Dermatologist, Aesthetic Physician, Cosmetologist</p>
+                                <p class="doc-degree">M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
+                                <div class="flex doc-items">
+                                    <div class="experience">
+                                        <p class="doc-font-weight-medium">5 Years</p>
+                                        <p class="doc-font-weight-light">Experience</p>
+                                    </div>
+                                    <div class="reviews">
+                                        <p class="doc-font-weight-medium">100%(178)</p>
+                                        <p class="doc-font-weight-light">Satisfied Patients</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+                    <div class="doc-book-appointment">
+                        <div class="doc-view-prifile">
+                            <a href="doctor-profile.html"><button>View Profile</button></a>
+                        </div>
+                        <div class="doc-book-appointment-btn">
+                            <a href="doctor-appointment.html"><button>Book Appointment</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-address">
+                    <div class="doc-clinic">
+                        <p>Skin Care Clinic(F8-MArkaz)</p>
+                    </div>
+                    <div class="doc-available b-flex">
+                        <!-- <span class="icon-available"></span> -->
+                        <p class="is-available">Available today</p>
+                        <p class="doc-fee">Rs. 1,500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-cards ">
+                <div class="doctor-card d-flex">
+                    <div class="doc-card b-flex">
+                        <div class="doc-profile-img">
+                            <img src="images/Healthflow transparent 1.svg" alt="profile image">
+                        </div>
+                        <div class="doc-details">
+                                <p class="doc-name">Dr. Noor Ul Ain</p>
+                                <p class="doc-speciality">Dermatologist, Aesthetic Physician, Cosmetologist</p>
+                                <p class="doc-degree">M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
+                                <div class="flex doc-items">
+                                    <div class="experience">
+                                        <p class="doc-font-weight-medium">5 Years</p>
+                                        <p class="doc-font-weight-light">Experience</p>
+                                    </div>
+                                    <div class="reviews">
+                                        <p class="doc-font-weight-medium">100%(178)</p>
+                                        <p class="doc-font-weight-light">Satisfied Patients</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+                    <div class="doc-book-appointment">
+                        <div class="doc-view-prifile">
+                            <a href="doctor-profile.html"><button>View Profile</button></a>
+                        </div>
+                        <div class="doc-book-appointment-btn">
+                            <a href="doctor-appointment.html"><button>Book Appointment</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-address">
+                    <div class="doc-clinic">
+                        <p>Skin Care Clinic(F8-MArkaz)</p>
+                    </div>
+                    <div class="doc-available b-flex">
+                        <!-- <span class="icon-available"></span> -->
+                        <p class="is-available">Available today</p>
+                        <p class="doc-fee">Rs. 1,500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-cards ">
+                <div class="doctor-card d-flex">
+                    <div class="doc-card b-flex">
+                        <div class="doc-profile-img">
+                            <img src="images/Healthflow transparent 1.svg" alt="profile image">
+                        </div>
+                        <div class="doc-details">
+                                <p class="doc-name">Dr. Noor Ul Ain</p>
+                                <p class="doc-speciality">Dermatologist, Aesthetic Physician, Cosmetologist</p>
+                                <p class="doc-degree">M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
+                                <div class="flex doc-items">
+                                    <div class="experience">
+                                        <p class="doc-font-weight-medium">5 Years</p>
+                                        <p class="doc-font-weight-light">Experience</p>
+                                    </div>
+                                    <div class="reviews">
+                                        <p class="doc-font-weight-medium">100%(178)</p>
+                                        <p class="doc-font-weight-light">Satisfied Patients</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+                    <div class="doc-book-appointment">
+                        <div class="doc-view-prifile">
+                            <a href="doctor-profile.html"><button>View Profile</button></a>
+                        </div>
+                        <div class="doc-book-appointment-btn">
+                            <a href="doctor-appointment.html"><button>Book Appointment</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-address">
+                    <div class="doc-clinic">
+                        <p>Skin Care Clinic(F8-MArkaz)</p>
+                    </div>
+                    <div class="doc-available b-flex">
+                        <!-- <span class="icon-available"></span> -->
+                        <p class="is-available">Available today</p>
+                        <p class="doc-fee">Rs. 1,500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-cards ">
+                <div class="doctor-card d-flex">
+                    <div class="doc-card b-flex">
+                        <div class="doc-profile-img">
+                            <img src="images/Healthflow transparent 1.svg" alt="profile image">
+                        </div>
+                        <div class="doc-details">
+                                <p class="doc-name">Dr. Noor Ul Ain</p>
+                                <p class="doc-speciality">Dermatologist, Aesthetic Physician, Cosmetologist</p>
+                                <p class="doc-degree">M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
+                                <div class="flex doc-items">
+                                    <div class="experience">
+                                        <p class="doc-font-weight-medium">5 Years</p>
+                                        <p class="doc-font-weight-light">Experience</p>
+                                    </div>
+                                    <div class="reviews">
+                                        <p class="doc-font-weight-medium">100%(178)</p>
+                                        <p class="doc-font-weight-light">Satisfied Patients</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+                    <div class="doc-book-appointment">
+                        <div class="doc-view-prifile">
+                            <a href="doctor-profile.html"><button>View Profile</button></a>
+                        </div>
+                        <div class="doc-book-appointment-btn">
+                            <a href="doctor-appointment.html"><button>Book Appointment</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-address">
+                    <div class="doc-clinic">
+                        <p>Skin Care Clinic(F8-MArkaz)</p>
+                    </div>
+                    <div class="doc-available b-flex">
+                        <!-- <span class="icon-available"></span> -->
+                        <p class="is-available">Available today</p>
+                        <p class="doc-fee">Rs. 1,500</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <!-- Footer section Start -->
+        <footer class="footer-area dm-sans">
+            <div class="footer-content d-flex">
+                <div class="website-details-section">
+                    <div class="website-logo">
+                        <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="HealthFlow.com"></a>
+                    </div>
+                    <div class="copyright-text">
+                        <ul>
+                            <li>Copyright © 2024 Health Flow | All Rights Reserved</li>
+                            <li>Design with ❤️ by <a href="https://github.com/iAneesAhmad">Anees Ahmad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-section footer-title">
+                    <p>Product</p>
+                    <ul>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="company-section footer-title">
+                    <p>Company</p>
+                    <ul>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="support-section footer-title">
+                    <p>Support</p>
+                    <ul>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">help Center</a></li>
+                        <li><a href="#">Server Status</a></li>
+                        <li><a href="#">Report and Bug</a></li>
+                        <li><a href="#">Chat Support</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us-section footer-title">
+                    <p>Follow Us</p>
+                    <ul>
+                        <div class="footer-flex"><img src="images/Facebook.svg" alt=""><li><a href="#">Facebook</a></li></div>
+                        <div class="footer-flex"><img src="images/Twitter.svg" alt=""><li><a href="#">Twitter</a></li></div>
+                        <div class="footer-flex"><img src="images/Instagram.svg" alt=""><li><a href="#">Instagram</a></li></div>
+                        <div class="footer-flex"><img src="images/LinkedIn.svg" alt=""><li><a href="#">LinkedIn</a></li></div>
+                        <div class="footer-flex"><img src="images/YouTube.svg" alt=""><li><a href="#">Youtube</a></li></div>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section End -->
+    <!---------JavaScript file Link------------>
+    <script src="script.js"></script>
+    </body>
+</html>

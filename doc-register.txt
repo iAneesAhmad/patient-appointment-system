@@ -1,0 +1,44 @@
+Personal Information:
+Full Name
+Date of Birth
+Gender
+Contact Information (address, phone number, email)
+
+
+Professional Information:
+Medical License Number
+Specialty or Specializations
+Education (Medical school attended, graduation year, degrees earned)
+Board Certifications (if any)
+Work Experience (previous hospitals, clinics, or practices)
+Professional Memberships (if applicable)
+
+
+Identification and Credentials:
+Government-issued ID (e.g., passport or driver's license)
+Passport-sized photograph
+Proof of medical license and certifications
+
+
+Practice Information:
+Clinic/Hospital Name (if applicable)
+Clinic/Hospital Address
+Working Hours
+Contact Information for the Clinic/Hospital
+
+
+Insurance Information (if applicable):
+Accepted insurance plans
+National Provider Identifier (NPI)
+
+User Account Information:
+Username
+Password
+Consents and Agreements:
+
+Acceptance of Terms of Service and Privacy Policy
+HIPAA Compliance Agreement (if applicable)
+Additional Information (optional):
+Bio or About Me section
+Languages spoken
+Any other relevant information

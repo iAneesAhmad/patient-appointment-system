@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Patient Appoinment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="page-body">
+        <!-- Header section Start -->
+        <header class="b-flex nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="healthflow.com" width="100%"></a>
+            </div>
+            <nav id="navBar" class="nav-links b-flex">
+                
+                <ul class="nav-ul">
+                    <div id="crossIcon" class="cross-icon-area">
+                        <i class="fa-sharp fa-solid fa-xmark cross-icon" onclick="hideContainer('navBar')"></i>
+                    </div>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li style="white-space: pre;"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                    <li style="white-space: pre;"><a href="labs-search.html" class="nav-link">Lab Test</a></li>
+                    <li><a href="help.html" class="nav-link">Help</a></li>
+                    <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                </ul>
+                <div class="login-signup b-flex">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <div class="img-content">
+                                <a href="#">Sign Up</a>
+                            </div>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content">
+                                <a href="signup-patient.html">As Patient</a>
+                                <a href="signup-doctor.html">As Doctor</a>
+                                <a href="signup-lab.html">As Lab</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="login.html"><button class="btn">Log In</button></a>
+                </div>
+            </nav>
+            <div id="menuBar" class="menu-icon">
+                <img onclick="showContainer('navBar')" src="images/menu-bar.svg" alt="">
+            </div>
+        </header>
+        <!-- Header section End -->
+        <!-- Hero section Start -->
+        <section class="hero b-flex">
+            <div class="hero-content">
+                <p style="font-weight: 400;">Make A <span class="purple-text">Difference</span> In The Lives Of <span class="pink-text">Others</span></p>
+                <p>Health is one of the most important things for us therefore immediately check your health for your Better Life</p>
+                <div class="actions b-flex">
+                    <div class="make-appointment">
+                        <a href="booking.html"><button>Make Appointment</button></a>
+                    </div>
+                    <!-- <div class="watch-video">
+                        <a href="#">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="images/Group 3.svg" width="60%" alt="home page image">
+            </div>
+        </section>
+        <!-- hero section End -->
+        <!-- Find Doctor section Start -->
+        <section class="find-doctor-area">
+            <div class="text">
+                <p>Find A Doctor</p>
+            </div>
+            <div class="input-fields">
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Speciallity">
+                    <input type="text" placeholder="Location">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </section>
+        <!-- Find Doctor section End -->
+        <!-- Book Appointment section Start -->
+        <section class="book-appointment">
+            <p class="book-appointment-heading">Book an Appointment Online, Today</p>
+            <div class="book-appointment-text">
+                <p>Experience the convenience of modern healthcare by booking your appointments online today. </p>
+            </div>
+            <div class="cards d-flex">
+                <div class="speciallity-card">
+                    <div class="card-image">
+                        <img src="images/dentist.svg" alt="dentist">
+                    </div>
+                    <div class="card-heading">
+                        <ul>
+                            <li>Dentist</li>
+                        </ul>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Providing compassionate dental care, from routine cleanings to advanced procedures, ensuring optimal oral health and confident smiles.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="booking.html"><button>Book Appointment</button></a>
+                    </div>
+                </div>
+                <div class="speciallity-card">
+                    <div class="card-image">
+                        <img src="images/orthopedic.svg" alt="dentist">
+                    </div>
+                    <div class="card-heading">
+                        <ul>
+                            <li>Orthopedic Surgeon</li>
+                        </ul>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Delivering comprehensive orthopedic care, addressing musculoskeletal issues and enhancing mobility and quality of life.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="booking.html"><button>Book Appointment</button></a>
+                    </div>
+                </div>
+                <div class="speciallity-card">
+                    <div class="card-image">
+                        <img src="images/Diagnostician.svg" alt="dentist">
+                    </div>
+                    <div class="card-heading">
+                        <ul>
+                            <li>Diagnostician</li>
+                        </ul>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Utilizing cutting-edge technology to accurately diagnose a wide range of medical conditions, guiding personalized treatment plans.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="booking.html"><button>Book Appointment</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Row 1 of booking -->
+            <div class="cards d-flex">
+                <div class="speciallity-card">
+                    <div class="card-image">
+                        <img src="images/sergoin.svg" alt="dentist">
+                    </div>
+                    <div class="card-heading">
+                        <ul>
+                            <li>Cardiologist</li>
+                        </ul>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Offering advanced cardiovascular care, from preventive screenings to innovative treatments for heart conditions.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="booking.html"><button>Book Appointment</button></a>
+                    </div>
+                </div>
+                <div class="speciallity-card">
+                    <div class="card-image">
+                        <img src="images/operation.svg" alt="dentist">
+                    </div>
+                    <div class="card-heading">
+                        <ul>
+                            <li>Surgeon</li>
+                        </ul>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Providing expert surgical interventions tailored to your needs, ensuring optimal outcomes and recovery.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="booking.html"><button>Book Appointment</button></a>
+                    </div>
+                </div>
+                <div class="speciallity-card">
+                    <div class="card-image">
+                        <img src="images/eye-specialist.svg" alt="dentist">
+                    </div>
+                    <div class="card-heading">
+                        <ul>
+                            <li>Eye Specialist</li>
+                        </ul>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Specializing in comprehensive eye care, including vision exams, diagnosis, and treatment of eye conditions.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="booking.html"><button>Book Appointment</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all">
+                <a href="see-all.html">See All</a>
+            </div>
+        </section>
+        <!-- Book Appointment section End -->
+        <!-- Testimonial section Start -->
+        <section class="testimonial">
+            <div class="testimonial-head">
+                <p class="testimonial-heading">Testimonial</p>
+                <div class="testimonial-text">
+                    <p>Discover firsthand accounts of transformative healthcare experiences in our Testimonial section, where patients share their stories of healing and empowerment. </p>
+                </div>
+            </div>
+            <div class="testimonial-cards-container d-flex">
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <img class="testimonial-img2" src="images/operation.svg" alt="person image">
+                    </div>
+                    <div class="testimonial-card-title dm-sans">
+                        <ul>
+                            <li>“An amazing service”</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-card-text dm-sans">
+                        <ul>
+                            <li>Booking appointments online has never been easier, and it's transformed how I manage my healthcare</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-person-name dm-sans">
+                        <ul>
+                            <li>Anas Khan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <img class="testimonial-img2" src="images/operation.svg" alt="person image">
+                    </div>
+                    <div class="testimonial-card-title dm-sans">
+                        <ul>
+                            <li>“Simplified Scheduling”</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-card-text dm-sans">
+                        <ul>
+                            <li>This online appointment system has simplified my life, allowing me to schedule and reschedule appointments with ease.</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-person-name dm-sans">
+                        <ul>
+                            <li>Aryan Malik</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <img class="testimonial-img2" src="images/operation.svg" alt="person image">
+                    </div>
+                    <div class="testimonial-card-title dm-sans">
+                        <ul>
+                            <li>“Hassle-Free Healthcare Access”</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-card-text dm-sans">
+                        <ul>
+                            <li>From booking to check-in, this online system has made my healthcare appointments hassle-free</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-person-name dm-sans">
+                        <ul>
+                            <li>Zeshan Zahid</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial section End -->
+    </div>
+        <!-- Footer section Start -->
+        <footer class="footer-area dm-sans">
+            <div class="footer-content d-flex">
+                <div class="website-details-section">
+                    <div class="website-logo">
+                        <a href="index.html"><img src="images/Healthflow transparent 1.svg" alt="HealthFlow.com"></a>
+                    </div>
+                    <div class="copyright-text">
+                        <ul>
+                            <li>Copyright © 2024 Health Flow | All Rights Reserved</li>
+                            <li>Design with ❤️ by <a href="https://github.com/iAneesAhmad">Anees Ahmad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-section footer-title">
+                    <p>Product</p>
+                    <ul>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="company-section footer-title">
+                    <p>Company</p>
+                    <ul>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="support-section footer-title">
+                    <p>Support</p>
+                    <ul>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">help Center</a></li>
+                        <li><a href="#">Server Status</a></li>
+                        <li><a href="#">Report and Bug</a></li>
+                        <li><a href="#">Chat Support</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us-section footer-title">
+                    <p>Follow Us</p>
+                    <ul>
+                        <div class="footer-flex"><img src="images/Facebook.svg" alt=""><li><a href="https://www.facebook.com/iAneesAhmad">Facebook</a></li></div>
+                        <div class="footer-flex"><img src="images/Twitter.svg" alt=""><li><a href="https://twitter.com/AneesAhmad_pk">Twitter</a></li></div>
+                        <div class="footer-flex"><img src="images/Instagram.svg" alt=""><li><a href="https://www.instagram.com/aneesahmad.pk">Instagram</a></li></div>
+                        <div class="footer-flex"><img src="images/LinkedIn.svg" alt=""><li><a href="https://www.linkedin.com/in/ianeesahmad/">LinkedIn</a></li></div>
+                        <div class="footer-flex"><img src="images/YouTube.svg" alt=""><li><a href="https://www.youtube.com/@iAneesAhmad">Youtube</a></li></div>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section End -->
+
+
+
+
+
+
+    <!-- Code for changing Nav links Style -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+
+
+
+</script>
+</body>
+</html>

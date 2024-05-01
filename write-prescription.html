@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="dashboard-body">
+        <div class="leftsidebar-links">
+            <div class="doc-dashboard-links active-link">
+                <a href="#"><img src="images/dashboard-link1.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link2.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link3.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link4.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link5.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link6.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="doc-dashboard">
+            <div class="doc-dashboard-body poppins">
+                <div class="doc-navbar">
+                    <div class="nav-search">
+                        <input type="search" name="search" id="" placeholder="Search">
+                        <img src="images/search-icon.svg" alt="" width="100%">
+                    </div>
+                    <div class="nav-right-links">
+                        <div class="chatbox">
+                            <a href="chats.html"><img src="images/chat-icon.svg" alt=""></a>
+                        </div>
+                        <div class="notifications">
+                            <a href="doctor-notifications.html"><img src="images//notidication-icon.svg" alt=""></a>
+                        </div>
+                        <div class="doc-profile">
+                            <div class="doc-img">
+                                <img src="images/dashboard-image.svg" alt="">
+                            </div>
+                            <p>Dr. Anees</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="write-presc">
+                    <p>Write Prescription</p>
+                    <div class="for-patient">
+                        <table>
+                            <tr>
+                                <th>Patient Name :</th>
+                                <td>Ali Daud</td>
+                            </tr>
+                            <tr>
+                                <th>Visit Id :</th>
+                                <td>abc123</td>
+                            </tr>
+                            <tr>
+                                <th>Date :</th>
+                                <td>23/02/24</td>
+                            </tr>
+                            <tr>
+                                <th>Gender :</th>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <th>Disease :</th>
+                                <td>Diabetes</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="prescription-area">
+                        <form action="">
+                            <form action="" method="post">
+                                <div class="contactus-input-flex">
+                                    <div class="input-group">
+                                        <label for="fname">Medicine Name</label>
+                                        <input type="text" name="fname" placeholder="Enter Medicines">
+                                    </div>
+                                </div>
+                                <div class="input-group d-flex">
+                                    <div class="presc-select-options">
+                                        <label for="dose">Dose</label>
+                                        <select name="dose" id="dose">
+                                            <option value="1 Time a Day">1 Time a Day</option>
+                                            <option value="1 Time a Day">2 Times a Day</option>
+                                            <option value="1 Time a Day">3 Times a Day</option>
+                                        </select>
+                                    </div>
+                                    <div class="presc-select-options">
+                                        <label for="time">Time</label>
+                                        <select name="time" id="time">
+                                            <option value="After Meal">After Meal</option>
+                                            <option value="Before Meal">Before Meal</option>
+                                            <option value="At Night">At Night</option>
+                                            <option value="At Day">At Day</option>
+                                        </select>
+                                    </div>
+                                    <div class="presc-select-options">
+                                        <label for="duration">Duration</label>
+                                        <select name="duration" id="duration">
+                                            <option value="3 days">3 Days</option>
+                                            <option value="1 week">1 Week</option>
+                                            <option value="2 weeks">2 Weeks</option>
+                                            <option value="1 month">1 Month</option>
+                                            <option value="3 months">3 Months</option>
+                                            <option value="Till next checkup">Till next Checkup</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label for="message">Preventions</label>
+                                    <textarea name="message" id="message" cols="10" rows="10" placeholder="Type Preventions..."></textarea>
+                                </div>
+                                <div class="input-group">
+                                    <label for="message">Lab Test</label>
+                                    <textarea name="message" id="message" cols="10" rows="10" placeholder="Type Lab Tests..."></textarea>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

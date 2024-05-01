@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div class="dashboard-body">
+        <div class="leftsidebar-links">
+            <div class="doc-dashboard-links active-link">
+                <a href="#"><img src="images/dashboard-link1.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link2.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link3.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link4.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link5.svg" alt=""></a>
+            </div>
+            <div class="doc-dashboard-links">
+                <a href="#"><img src="images/dashboard-link6.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="doc-dashboard">
+            <div class="doc-dashboard-body poppins">
+                <div class="doc-navbar">
+                    <div class="nav-search">
+                        <input type="search" name="search" id="" placeholder="Search">
+                        <img src="images/search-icon.svg" alt="" width="100%">
+                    </div>
+                    <div class="nav-right-links">
+                        <div class="chatbox">
+                            <a href="chats.html"><img src="images/chat-icon.svg" alt=""></a>
+                        </div>
+                        <div class="notifications">
+                            <a href="doctor-notifications.html"><img src="images//notidication-icon.svg" alt=""></a>
+                        </div>
+                        <div class="doc-profile">
+                            <div class="doc-img">
+                                <img src="images/dashboard-image.svg" alt="">
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <div class="img-content">
+                            <p>Dr. Anees</p>
+                                    </div>
+                                </button>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content">
+                                        <a href="doc-manage-profile.html">Manage Profile</a>
+                                        <a href="logout.html">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-dashboard-insights">
+                    <div class="d-flex">
+                        <div class="insights poppins">
+                            <div class="doc-greetings">
+                                <p>Good Morning <span>Dr. Anees Ur Rehman!</span></p>
+                            </div>
+                            <div class="insights-container">
+                                <div class="visit-for-today">
+                                    <p>Visits for Today</p>
+                                </div>
+                                <p class="today-patients">104</p>
+                                <div class="d-flex">
+                                    <div class="new-patients">
+                                        <p>New Patients</p>
+                                        <p class="new-patient-no">40</p>
+                                        <div class="new-patient-percent">
+                                            <p>51% <img src="images/arrow-up.svg" alt=""></p>
+                                        </div>
+                                    </div>
+                                    <div class="old-patients">
+                                        <p>Old Patients</p>
+                                        <p class="old-patient-no">64</p>
+                                        <div class="old-patient-percent">
+                                            <p>20% <img src="images/arrow-down.svg" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doc-dashboard-img">
+                                    <img src="images/dashboard-image.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <div class="calendar-area">
+                                <div class="wrapper">
+                                    <header>
+                                        <div class="icons" style="justify-content: space-between;">
+                                        <span id="prev" class="material-symbols-rounded"><</span>
+                                        <p class="current-date"></p>
+                                        <span id="next" class="material-symbols-rounded">></span>
+                                        </div>
+                                    </header>
+                                    <div class="calendar">
+                                        <ul class="weeks">
+                                        <li>Sun</li>
+                                        <li>Mon</li>
+                                        <li>Tue</li>
+                                        <li>Wed</li>
+                                        <li>Thu</li>
+                                        <li>Fri</li>
+                                        <li>Sat</li>
+                                        </ul>
+                                        <ul class="days"></ul>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-dashboard-patient-details d-flex">
+                    <div class="patient-list">
+                        <div class="patient-list-head d-flex">
+                            <p>Patient List</p>
+                            <form action="">
+                                <select name="days" id="">
+                                    <option value="Today">Today</option>
+                                    <option value="Yesterday">Yesterday</option>
+                                    <option value="Tomorrow">Tomorrow</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="patient-list-detail">
+                            <div class="patient-list- d-flex">
+                                <div class="flex">
+                                    <div class="patient-img">
+                                        <p>SM</p>
+                                    </div>
+                                    <div class="patient-list-name">
+                                        <p>Shahveer Mughal</p>
+                                        <p class="weekly-visit">Weekly Visit</p>
+                                    </div>
+                                </div>
+                                <div class="patient-arival">
+                                    <p>9:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="patient-list- d-flex">
+                                <div class="flex">
+                                    <div class="patient-img">
+                                        <p>AD</p>
+                                    </div>
+                                    <div class="patient-list-name">
+                                        <p>Ali Daud</p>
+                                        <p class="routine-checkup">Routine Checkup</p>
+                                    </div>
+                                </div>
+                                <div class="patient-arival">
+                                    <p>9:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="patient-list- d-flex">
+                                <div class="flex">
+                                    <div class="patient-img">
+                                        <p>DJ</p>
+                                    </div>
+                                    <div class="patient-list-name">
+                                        <p>Danish Jalil</p>
+                                        <p class="report">Report</p>
+                                    </div>
+                                </div>
+                                <div class="patient-arival report">
+                                    <p class="">9:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="patient-list- d-flex">
+                                <div class="flex">
+                                    <div class="patient-img">
+                                        <p>SM</p>
+                                    </div>
+                                    <div class="patient-list-name">
+                                        <p>Syed Musa</p>
+                                        <p class="weekly-visit">Weekly Visit</p>
+                                    </div>
+                                </div>
+                                <div class="patient-arival weekly-visit">
+                                    <p class="">9:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-patients">
+                        <div class="recent-patient-head d-flex">
+                            <p>Recent Patients</p>
+                            <a href="view-all-patients.html">View All ></a>
+                        </div>
+                        <div class="patient-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Visit Id</th>
+                                        <th>Date</th>
+                                        <th>Gender</th>
+                                        <th>Diaseases</th>
+                                        <th>Prescription</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="flex">
+                                            <div class="patient-table-img">
+                                                <p>SM</p>
+                                            </div>Shahveer Mughal
+                                        </td>
+                                        <td>IPD-2424</td>
+                                        <td>05/02/24</td>
+                                        <td>Male</td>
+                                        <td>Diabetes</td>
+                                        <td><a href="write-prescription.html">write</a></td>
+                                        <td>Out Patient</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="flex">
+                                            <div class="patient-table-img">
+                                                <p>AD</p>
+                                            </div>Ali Daud
+                                        </td>
+                                        <td>IPD-2424</td>
+                                        <td>05/02/24</td>
+                                        <td>Male</td>
+                                        <td>Diabetes</td>
+                                        <td><a href="write-prescription.html">write</a></td>
+                                        <td>Out Patient</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="flex">
+                                            <div class="patient-table-img">
+                                                <p>DJ</p>
+                                            </div>Danish Jalil
+                                        </td>
+                                        <td>IPD-2424</td>
+                                        <td>05/02/24</td>
+                                        <td>Male</td>
+                                        <td>Diabetes</td>
+                                        <td><a href="write-prescription.html">write</a></td>
+                                        <td>Out Patient</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calendar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
