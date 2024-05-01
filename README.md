@@ -1,2 +1,1 @@
-# patient-appointment-system
-Patient Appointment System
+#Patient Appointment System
